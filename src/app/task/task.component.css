@@ -1,0 +1,17 @@
+.taskContainer{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 0.5em;
+    padding:1em;
+    column-gap: normal;
+}
+
+.taskName{
+    flex: 1 1 0;
+}
+
+.taskDate{
+    flex: 1 1 0;
+}

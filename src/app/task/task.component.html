@@ -1,0 +1,7 @@
+<div class="taskContainer">
+  <p class= "taskName">{{ taskName }}</p>
+  <p class = taskDate>{{ dueDate | date }}</p>
+  <button mat-button color="warn" (click)="removeTask(id)">
+    <mat-icon aria-label="Remove task button">remove_circle</mat-icon>
+  </button>
+</div>

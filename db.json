@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "3",
+      "name": "Birthday",
+      "dueDate": "2022-10-23T17:28:07.996Z",
+      "details": "blah blah blah"
+    },
+    {
+      "id": "1",
+      "name": "Christmas",
+      "dueDate": "2022-12-25T17:28:07.996Z",
+      "details": "blah blah blah"
+    },
+    {
+      "id": "2",
+      "name": "Groceries",
+      "dueDate": "2022-05-31T17:28:07.996Z",
+      "details": "blah blah blah"
+    }
+  ]
+}
