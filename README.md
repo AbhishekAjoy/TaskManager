@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
+## Json server
+
+Run `npm run server` for a running the json server. Navigate to `http://localhost:5000/`. This should display the contents of db.json which acts as the file so that the web app can perform api requests.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
