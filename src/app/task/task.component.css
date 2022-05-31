@@ -8,10 +8,6 @@
     column-gap: normal;
 }
 
-.taskName{
-    flex: 1 1 0;
-}
-
-.taskDate{
+.taskDetail{
     flex: 1 1 0;
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { TaskDataService } from './task-data.service';
 import { taskModel } from './taskModel';
+import { MatDialog } from '@angular/material/dialog';
+import { AddtaskComponent } from './addtask/addtask.component';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +10,12 @@ import { taskModel } from './taskModel';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'taskapp';
   tasks: taskModel[] = [];
-  
-  constructor(private taskDataService: TaskDataService){
+  constructor(private taskDataService: TaskDataService, public dialog: MatDialog){
     this.getTasks();
   }
   addTask(){
-   console.log('Enter new task');
+    const dialogRef = this.dialog.open(AddtaskComponent);
   }
 
   getTasks(){
