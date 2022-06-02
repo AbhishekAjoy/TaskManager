@@ -1,0 +1,15 @@
+.taskForm{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+.full-width{
+    width: 400px;
+}
+
+.form-actions{
+    display: flex;
+    justify-content: flex-start;
+}

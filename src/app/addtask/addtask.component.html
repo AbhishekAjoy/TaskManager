@@ -1,11 +1,11 @@
-<h2 mat-dialog-title>Add Task</h2>
+<!--<h2 mat-dialog-title>Add Task</h2>
 
   <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
     <label for="task-name">Task Name: </label>
     <input id="task-name" type="text" formControlName="taskName" />
 
     <label for="task-date">Task Date: </label>
-    <input id="first-name" type="text" formControlName="taskDate" />
+    <input id="task-date" type="date" formControlName="taskDate" />
 
     <label for="task-details">Task Details: </label>
     <input id="task-details" type="text" formControlName="taskDetails" />
@@ -16,4 +16,43 @@
   <button type = "submit" mat-button [mat-dialog-close]="true" cdkFocusInitial>Add</button>
 </mat-dialog-actions>
 
-</form>
+</form>-->
+<div class="taskForm">
+  <h2 mat-dialog-title>Add Task</h2>
+
+  <mat-dialog-content [formGroup]="taskForm">
+    <mat-form-field appearance="outline" class="full-width">
+      <input matInput placeholder="Task Name" formControlName="taskName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <input
+        matInput
+        [matDatepicker]="picker"
+        [min]="minDate"
+        placeholder="Task Date"
+        (click)="picker.open()"
+        formControlName="taskDate"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <textarea
+        matInput
+        placeholder="Task Details"
+        formControlName="taskDetails"
+      ></textarea>
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    
+      <button class="mat-raised-button" (click)="cancel()">Cancel</button>
+      <button class="mat-raised-button mat-primary" (click)="onSubmit()">
+        Save
+      </button>
+
+  </mat-dialog-actions>
+</div>

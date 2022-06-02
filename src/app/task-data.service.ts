@@ -11,13 +11,16 @@ export class TaskDataService {
   private apiUrl = 'http://localhost:5000/tasks'
   constructor(private http: HttpClient) { }
 
+  addTask(task: taskModel):Observable<taskModel>{
+    return this.http.post<taskModel>(this.apiUrl,task);
+  }
+
   getTasks(): Observable<taskModel[]>{    
     return this.http.get<taskModel[]>(this.apiUrl);
   }
 
   removeTask(id:string): Observable<taskModel>{
     const taskUrl = `${this.apiUrl}/${id}`;
-    console.log(taskUrl);
     return this.http.delete<taskModel>(taskUrl);
   }
 }

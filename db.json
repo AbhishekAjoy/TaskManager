@@ -17,6 +17,12 @@
       "name": "Groceries",
       "dueDate": "2022-05-31T17:28:07.996Z",
       "details": "blah blah blah"
+    },
+    {
+      "id": "ff00f0fe-4738-433d-8aa5-9250ecd35d63",
+      "name": "Office",
+      "dueDate": "2022-06-08T18:30:00.000Z",
+      "details": "Reopening office"
     }
   ]
 }
