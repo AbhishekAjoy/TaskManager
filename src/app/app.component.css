@@ -1,9 +1,9 @@
 .button{
     display: flex;
     justify-content: flex-end;
-    margin: 7em;
+    margin:8% 8.5% 3% 0;
 }
 
 .taskList{
-    margin: 0 6em 0 6em;
+    margin: 0 5% 0 5%;
 }

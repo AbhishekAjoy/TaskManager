@@ -1,10 +1,10 @@
 .taskContainer{
     display: flex;
-    margin: 1em;
+    margin: 2% 4% 2% 4%;;
     align-items: center;
     background-color: #eeeeee;
     border-radius: 0.5em;
-    padding:1em;
+    padding:2%;
     column-gap: normal;
 }
 
